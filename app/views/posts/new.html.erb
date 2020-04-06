@@ -1,0 +1,16 @@
+<h2>Create a post</h2>
+<%= form_tag posts_path, method: "post" do %>
+  <div class="field">
+    <%= label_tag "title", "Title" %>
+    <%= text_field_tag "Title" %>
+  </div>
+  <div class="field">
+    <%= label_tag "category", "Category" %>
+    <%= text_field_tag "category" %>
+  </div>
+  <div class="field">
+    <%= label_tag "content", "Content" %>
+    <%= text_field_tag "Content" %>
+  </div>
+  <%= submit_tag "Create post" %>
+<% end %>
